@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700&display=swap');
+
+html {
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+	height: 100%;
+	color: #999;
+}
+
+.home {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #2b2c38;
+    background-image: url('../images/sky.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+}
+
+nav {    
+    display: flex;
+    z-index: 10;    
+    justify-content: space-between;
+    background-color: #2b2c38;
+    
+}
+
+ul {  
+    display: flex;  
+    list-style-type: none;
+    padding: 10px;
+    width: 40%;    
+    justify-content: space-around;
+}
+
+li {
+    width: 150px;
+    padding: 5px;
+    text-decoration: none; 
+    font-size: 15px;  
+       
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+#img-logo {
+	height: 80px;
+    padding: 10px;
+}
+
+#presentation {
+    text-align: center;
+}
+
+#presentation p {	
+    color: white;
+    font-size: 28px;
+    font-family: 'Mukta', sans-serif;
+	font-weight: 400;    
+}
+
+footer {
+	background-color: #2b2c38;
+	padding: 5px;
+	margin-top: 100px;
+    display:flex; 
+    justify-content: center;
+    text-align: center;       
+}
+
+footer p {    
+	margin-top: 5px; 
+     
+}
+
+footer a {
+	font-size: 0.7em;
+	color: #999;
+	text-decoration: none;
+	padding: 5px;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+section {
+	flex-grow: 1;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0 0 30px 0;
+    font-weight: lighter;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+	padding: 15px;
+	width: 100%;
+	font-size: 1em;
+	border: 0;
+	border-radius: 5px;
+	color: #b3b3b3;
+	background-color: #333333;
+	margin-bottom: 15px;
+}
+
+button {
+	background-color: #ff0c7dc4;
+	color: white;
+	padding: 15px;
+	width: 100%;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+}
+
+#login-body {
+	max-width: 450px;
+	margin: auto;
+	background-color: rgba(16, 21, 100, 0.863);
+	color: white;
+	border-radius: 5px;
+	padding: 30px;
+	margin-top: 10px;
+}
+
+.alert {
+	padding: 5px;
+	margin: 20px 0;
+	color: white;
+	border-radius: 5px;
+	text-align: center;	
+}
+
+.success {
+	background-color: green;
+}
+
+.error {
+	background-color: red;
+}
+
+.footer-container {
+	width: 1400px;
+	margin: 0 auto;
+}
+
+#remember {
+    margin-top: 8px;
+}
+
+#inscription {
+    color: #ff0c7dc4;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 7px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0ppx;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
+    #img-logo {
+        display: none;
+    }
+}
