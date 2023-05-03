@@ -25,8 +25,8 @@ if (!empty($_POST['pseudo']) && !empty($_POST['password'])) {
 
 	//STOCKAGE DANS UNE VARIABLE
 
-	$pseudo = htmlspecialchars($_POST['pseudo']);
-	$password = htmlspecialchars($_POST['password']);
+	$pseudo = $_POST['pseudo'];
+	$password = $_POST['password'];
 
 	// VERIFICATION SI USER EXISTE DANS BDD
 
